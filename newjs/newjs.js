@@ -33,3 +33,22 @@ default:
 document.getElementById("info").innerHTML="użytkownik nie istnieje!";
 }
 }
+//zad 16
+function logowania(){
+    var login = document.getElementById("loginy").value;
+    var haslo = document.getElementById("haslo").value;
+    
+    if (login=="admin" && haslo=="xyz"){
+        document.getElementById("infor").innerHTML="jesteś zalogowany jako administrator";
+    }
+    else if (login=="user1" && haslo=="abc"){
+        document.getElementById("infor").innerHTML="jesteś zalogowany jako user1";
+    }
+    else if (login=="user2" && haslo=="cba"){
+        document.getElementById("infor").innerHTML="jesteś zalogowany jako user2";
+    }
+    else {
+        alert("podaj prawidłowe login i haslo");
+    }
+    
+    }
