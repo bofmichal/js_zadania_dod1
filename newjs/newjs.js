@@ -52,3 +52,11 @@ function logowania(){
     }
     
     }
+    // zad 17
+    function dodaj(){
+        var nowy = document.createElement("li");
+        var tekst = document.createTextNode(document.getElementById("imie").value)
+        nowy.appendChild(tekst);
+        var rodzic = document.getElementById("lista");
+rodzic.appendChild(nowy);
+    }
