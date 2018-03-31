@@ -60,3 +60,38 @@ function logowania(){
         var rodzic = document.getElementById("lista");
 rodzic.appendChild(nowy);
     }
+    //zad 18
+    var zero = 0;
+    function dodajdatek(){
+        var datek=parseFloat(document.getElementById("datek").value);
+        
+        if(isFinite(datek)){
+            zero +=datek;    
+            document.getElementById("sumdat").innerHTML="suma zebranych środków: " + parseInt(zero);
+             }   
+             
+             if(isNaN(datek) || datek<=0){
+alert("Jeśli chcesz pomóc to wpisz datek jako liczbę większą od zera")
+             }
+   }
+   //zad20
+   function licytacja(){
+       var licytacja=parseFloat(document.getElementById("kwotalic").value);
+       var nastepna=parseFloat(document.getElementById("infolic").innerHTML);
+       if(licytacja>zero){            
+        document.getElementById("infolic").innerHTML=parseFloat(licytacja);
+        
+        console.log(infolic);
+         }   
+         if(licytacja>nastepna){
+            document.getElementById("infolic").innerHTML=parseFloat(licytacja);
+         }
+         if(licytacja<nastepna){
+            document.getElementById("infolic").innerHTML="Twoja oferta jest nizsza niz najwyzsza";
+            document.getElementById("informacja").innerHTML="";
+         }
+         if(isNaN(licytacja)){
+            document.getElementById("infolic").innerHTML="wpisz kwotę wpłaty w postaci liczby rzeczywistej";
+            document.getElementById("informacja").innerHTML="";  
+         }
+   }

@@ -53,6 +53,28 @@
     </ol>
     <input type="button" onclick="dodaj()" value="dodaj do listy" />
 </div>
+<div class="zadania">
+18.	Na stronie znajduje się pole tekstowe - po wpisaniu tam kwoty datku i naciśnięciu 
+przycisku wpłać, jest ona dodawana do ogólnej sumy zebranych środków. Odnotowywana jest 
+również liczba wpłat i wyświetlana ich średnia wartość. Nieprawidłową wpłatę (NaN lub liczba mniejsza od 0) 
+traktuj jako 0.
+<p>Wpisz kwotę datku:<input type="text" id="datek"/></p>
+<p id="sumdat"></p>
+<input type="button" onclick="dodajdatek()" value="dodaj datek" />
+</div>
+<div class="zadania">
+20.	Na stronie znajduje się pole na wpisanie kwoty oraz przycisk "licytuj". Poniżej wyświetlana jest wartość 
+najwyższej oferty. Po naciśnięciu przycisku sprawdzamy, czy nowa kwota nie jest większa i ewentualnie 
+aktualizujemy wyświetloną wartość.
+<p>Wpisz kwotę licytacji:<input type="text" id="kwotalic"/></p>
+<div id="informacja">Największa kwota licytacji</div><p id="infolic"></p>
+
+<input type="button" onclick="licytacja()" value="sprawdzam" />
+</div>
+<div class="zadania">
+21.	Na stronie znajduje się przycisk "losuj", po jego naciśnięciu wyświetlany jest (losowo) jeden z 
+trzech napisów: "papier", "nożyce" lub "kamień".
+</div>
         <script type="text/javascript" src="newjs/newjs.js"></script>
     </body>
 </html>
