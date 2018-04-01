@@ -95,3 +95,17 @@ alert("Jeśli chcesz pomóc to wpisz datek jako liczbę większą od zera")
             document.getElementById("informacja").innerHTML="";  
          }
    }
+   //zad 21
+   function losowanie(){
+    var los=(Math.floor(Math.random()*3)+1);
+    console.log(los);
+    if(los==1){
+        document.getElementById("papier").innerHTML="papier";  
+    }
+    if(los==2){
+        document.getElementById("papier").innerHTML="kamien";  
+    }
+    if(los==3){
+        document.getElementById("papier").innerHTML="norzyce";  
+    }
+   }
