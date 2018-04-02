@@ -109,3 +109,14 @@ alert("Jeśli chcesz pomóc to wpisz datek jako liczbę większą od zera")
         document.getElementById("papier").innerHTML="norzyce";  
     }
    }
+
+   // zad 25
+   function los(){
+       var str="";
+    var los;
+    for (var i = 0; i < 10; ++i) {
+        los=(Math.floor(Math.random()*19));
+        str += (Math.floor(Math.random()*19)) + ", ";
+        }
+        document.getElementById("wpislos").innerHTML=str;
+   }
