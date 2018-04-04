@@ -120,3 +120,18 @@ alert("Jeśli chcesz pomóc to wpisz datek jako liczbę większą od zera")
         }
         document.getElementById("wpislos").innerHTML=str;
    }
+
+   //zad 26
+   function los2(){
+    var str="";
+ var los;
+ var liczba=parseFloat(document.getElementById("liczbaxxx").value);
+ 
+ console.log(liczba);
+ for (var i = 0; i < liczba; ++i) {
+     los=(Math.floor(Math.random()*19));
+     str += (Math.floor(Math.random()*19))+ ", ";
+     }
+     document.getElementById("wpislos2").innerHTML=str;
+     
+}
