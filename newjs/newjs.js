@@ -135,3 +135,30 @@ alert("Jeśli chcesz pomóc to wpisz datek jako liczbę większą od zera")
      document.getElementById("wpislos2").innerHTML=str;
      
 }
+//zad 28
+function los3(){
+    var str="";
+    var suma=0;
+ var los;
+ var liczba=parseFloat(document.getElementById("liczbaxxx3").value);
+ 
+ console.log(liczba);
+ for (var i = 0; i < 5; ++i) {
+     los=(Math.floor(Math.random()*19));
+     //str += (Math.floor(Math.random()*19))+ ", ";
+     str += los+ ", ";
+     suma += los;
+     
+     }
+     if(suma>=liczba){
+        document.getElementById("wpislos5").innerHTML="suma wylosowanych liczb jest większa od podanej liczby";
+     }
+     if(suma<liczba){
+        document.getElementById("wpislos5").innerHTML="";
+     }
+     if(liczba>95){
+        document.getElementById("wpislos5").innerHTML="suma losowanych liczb nie osiągnie podanej wartości. Podaj liczbę mniejszą od 95";
+     }
+     document.getElementById("wpislos3").innerHTML=str;
+     document.getElementById("wpislos4").innerHTML=suma;
+}
