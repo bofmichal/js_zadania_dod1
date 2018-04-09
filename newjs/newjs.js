@@ -162,3 +162,50 @@ function los3(){
      document.getElementById("wpislos3").innerHTML=str;
      document.getElementById("wpislos4").innerHTML=suma;
 }
+// zad29
+function wypisz1(){
+    var tablica=[];
+    for(var i = 1; i<101; ++i){
+        tablica[i]=" "+i;
+        if(i%2==0){
+            tablica[i]=" Fizz";
+        }
+        if(i%3==0){
+            tablica[i]=" Buzz";
+        }
+        if(i%2==0 && i%3==0){
+            tablica[i]=" FizzBuzz";
+        }
+    }
+    document.getElementById("wpisz").innerHTML=tablica;
+}
+//zad30
+function los4(){
+    var str="";
+ var los;
+ var ar=[];
+ for (var i = 0; i < 20; ++i) {
+     //los=(Math.floor(Math.random()*6)+1);
+     //str += los + ", ";
+     ar[i]=" "+(Math.floor(Math.random()*6)+1);
+if(ar[i]==1){
+    ar[i]=" jeden";
+}
+if(ar[i]==2){
+    ar[i]=" dwa";
+}
+if(ar[i]==3){
+    ar[i]=" trzy";
+}
+if(ar[i]==4){
+    ar[i]=" cztery";
+}
+if(ar[i]==5){
+    ar[i]=" pięć";
+}
+if(ar[i]==6){
+    ar[i]=" sześć";
+}
+     }
+     document.getElementById("wpislos6").innerHTML=ar;
+}
